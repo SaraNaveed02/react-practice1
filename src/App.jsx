@@ -1,4 +1,6 @@
 import Button from "./component/button";
+import ReactConcepts from "./component/content";
+import Footer from "./component/footer";
 
 export default function App() {
   return (
@@ -45,11 +47,19 @@ export default function App() {
         </p>
 
         <div className="flex gap-4">
-         <Button name="Learn React" />
+         <Button  color="blue"  name="Learn React" />
 
-        <Button name="Download React" />
+        <Button color="red" name="Download React" />
         </div>
       </main>
+      {/* content */}
+      <div className="mt-20">
+        <ReactConcepts />
+      </div>
+      {/* footer */}
+      <div>
+        <Footer />
+      </div>
     </div>
   );
 }
